@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "a-new-ws",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "https://github.com/simonsinclair/a-new-ws",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "normalize.css": "~3.0.1"
+  }
+}
