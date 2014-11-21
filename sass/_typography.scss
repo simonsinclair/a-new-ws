@@ -29,8 +29,3 @@ $h4-lines: 1;
 $h4-line-height: $h4-line * $h4-lines;
 $h4-margin-top: 1 * $h4-line;
 $h4-margin-bottom: 1 * $h4-line;
-
-// Variables are rounded to pixels
-// It's safe to multiply with integers
-// eg. h1 {margin: 2*$h1-line 0;}
-// The grid will stay aligned

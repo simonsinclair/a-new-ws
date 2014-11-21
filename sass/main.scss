@@ -3,6 +3,17 @@
 
 @import 'typography';
 
+@font-face {
+  font-family: 'HelveticaNeueforBBC-Rg';
+  src: url('../fonts/HelveticaNeueforBBC-Rg.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/HelveticaNeueforBBC-Rg.otf') format('opentype'),
+       url('../fonts/HelveticaNeueforBBC-Rg.woff') format('woff'),
+       url('../fonts/HelveticaNeueforBBC-Rg.ttf') format('truetype'),
+       url('../fonts/HelveticaNeueforBBC-Rg.svg#HelveticaNeueforBBC-Rg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   &,
   &:before,
@@ -12,10 +23,13 @@
 }
 html {
   box-sizing: inherit;
+  height: 100%;
 }
 body {
   color: #222;
+  font-family: 'HelveticaNeueforBBC-Rg', sans-serif;
   font-size: $base-font-size;
+  height: 100%;
   line-height: $base-line-height; // 1.4
   // -webkit-font-smoothing: antialiased;
 }
@@ -83,8 +97,15 @@ a {
 // PAGE
 //
 
-.scene {}
-.stage {}
+.scene {
+  height: 100%;
+  position: relative;
+}
+.stage {
+  background: #FFF;
+  // position: absolute;
+    // top: 0; right: 0; bottom: 0; left: 0;
+}
 
 // Stage 6
 .s6 {}
