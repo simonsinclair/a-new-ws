@@ -34,15 +34,24 @@
       <!-- Stage 1 -->
       <div class="stage s1">
         <div class="stage__content">
-          <video autoplay="" loop="" muted="" preload="" poster="img/s1-video-poster.jpg" width="100%">
-            <source src="video/bbc-news-plasma-loop.mp4" type="video/mp4;codecs=avc1.42E01E" />
-            <source src="video/bbc-news-plasma-loop.webm" type="video/webm;codecs=vp8" />
+
+          <video class="s1__video"
+            autoplay="" loop="" muted="" preload="" poster="img/s1-video-poster.jpg" width="100%">
+              <source src="video/bbc-news-plasma-loop.mp4" type="video/mp4;codecs=avc1.42E01E" />
+              <source src="video/bbc-news-plasma-loop.webm" type="video/webm;codecs=vp8" />
           </video>
-          <h1>Welcome to a new <img src="http://placehold.it/320x180" alt="BBC World Service" /></h1>
+          <div class="s1__video-dimmer">&nbsp;</div>
+
+          <h1 class="s1__welcome">
+            <span class="s1__welcome-welcome">Welcome</span>
+            <span class="s1__welcome-to-a-new">to a new</span>
+            <img src="img/bbc-world-service.svg" alt="BBC World Service" width="232" height="175" />
+          </h1>
 
           <div class="s1__scroll-cta">
             <p>Scroll</p>
           </div>
+
         </div>
       </div>
 
