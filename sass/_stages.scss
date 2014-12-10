@@ -1,8 +1,50 @@
 // Stage 1
 .s1 {
-  background-color: #E7E7E7;
+  background-color: #F3F2F3;
   text-align: center;
 }
+  .s1__video {
+    position: absolute;
+      top: 0px; left: 0px;
+    z-index: 0;
+  }
+  .s1__video-dimmer {
+    background-color: rgba(255,255,255,0.5);
+    height: 720px;
+    position: absolute;
+      top: 0; left: 0;
+    width: 1280px;
+    z-index: 10;
+  }
+  .s1__welcome {
+    position: absolute;
+      top: 78px; left: (1280px/2)-(383/2);
+    z-index: 20;
+
+    .s1__welcome-welcome,
+    .s1__welcome-to-a-new {
+      display: block;
+      text-transform: uppercase;
+    }
+    .s1__welcome-welcome {
+      font-weight: 800;
+    }
+
+    .s1__welcome-to-a-new {
+      font-weight: 300;
+    }
+
+    img {
+      display: block;
+      margin: $base-line-height auto 0;
+    }
+  }
+  .s1__scroll-cta {
+    position: absolute;
+      bottom: 0; left: (1280px/2)-(69/2);
+    text-transform: uppercase;
+    z-index: 20;
+  }
 
 // Stage 2
 .s2 {
