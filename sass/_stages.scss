@@ -16,21 +16,21 @@
     width: 1280px;
     z-index: 10;
   }
-  .s1__welcome {
+  .s1__title {
     position: absolute;
       top: 78px; left: (1280px/2)-(383/2);
     z-index: 20;
 
-    .s1__welcome-welcome,
-    .s1__welcome-to-a-new {
+    .s1__welcome,
+    .s1__to-a-new {
       display: block;
       text-transform: uppercase;
     }
-    .s1__welcome-welcome {
+    .s1__welcome {
       font-weight: 800;
     }
 
-    .s1__welcome-to-a-new {
+    .s1__to-a-new {
       font-weight: 300;
     }
 
@@ -40,6 +40,7 @@
     }
   }
   .s1__scroll-cta {
+    display: none; // TEMP
     position: absolute;
       bottom: 0; left: (1280px/2)-(69/2);
     text-transform: uppercase;
@@ -51,6 +52,25 @@
   background-color: #98918B;
   text-align: center;
 }
+  .s2__title {
+    color: #FFF;
+  }
+  .s2__we-recently-relaunched {
+    font-weight: 300;
+  }
+  .s2__unique-news-sites {
+    display: block;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+    .s2__count {
+      color: #312F2D;
+      font-weight: 800;
+    }
+    .s2__unique {
+      font-weight: 800;
+    }
+
   .s2__sites {
     @extend %nav;
   }
@@ -58,16 +78,91 @@
 // Stage 3
 .s3 {
   background-color: #3C4141;
-  color: #FFF;
   text-align: center;
 }
+  .s3__title {
+    color: #FFF;
+    font-weight: 300;
+  }
+    .s3__count {
+      @extend h1;
+
+      display: block;
+      font-weight: 800;
+    }
+  .s3__graph {
+
+    p {
+      color: #17B2B2;
+    }
+  }
+    .s3__count {
+      @extend h1;
+
+      display: block;
+    }
 
 // Stage 4
 .s4 {
   background-color: #F24F00;
 }
-  .s4__languages {
-    @extend %nav;
+  .s4__map {
+    position: absolute;
+      top: 0; left: 0;
+    z-index: 0;
+  }
+  .s4__title-group {
+    position: absolute;
+      top: 100px; left: 0;
+    width: 720px;
+    z-index: 10;
+  }
+    .s4__title {}
+    .s4__languages {
+      @extend %nav;
+    }
+
+  .s4__fact {
+    background-color: #180A00;
+    color: #FFF;
+    padding: $base-line-height;
+    position: absolute;
+    width: 256px;
+    z-index: 10;
+
+    p {
+      @extend %clearfix;
+    }
+      .s4__fact-name {
+        float: left;
+      }
+      .s4__fact-value {
+        float: right;
+      }
+  }
+
+  // Russian Fact
+  .s4__fact--russian {
+    top: 256px; right: 0;
+
+    .s4__fact-name {
+      width: 120px;
+    }
+    .s4__fact-value {
+      width: 56px;
+    }
+  }
+
+  // Sinhala Fact
+  .s4__fact--sinhala {
+    top: 0; right: 0;
+
+    .s4__fact-name {
+      width: 120px;
+    }
+    .s4__fact-value {
+      width: 56px;
+    }
   }
 
 // Stage 5
