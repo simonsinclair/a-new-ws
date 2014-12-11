@@ -36,15 +36,15 @@
         <div class="stage__content">
 
           <video class="s1__video"
-            autoplay="" loop="" muted="" preload="" poster="img/s1-video-poster.jpg" width="100%">
+            autoplay="" loop="" muted="" preload="" poster="img/s1-video-poster.jpg" width="1280" height="720" >
               <source src="video/bbc-news-plasma-loop.mp4" type="video/mp4;codecs=avc1.42E01E" />
               <source src="video/bbc-news-plasma-loop.webm" type="video/webm;codecs=vp8" />
           </video>
           <div class="s1__video-dimmer">&nbsp;</div>
 
-          <h1 class="s1__welcome">
-            <span class="s1__welcome-welcome">Welcome</span>
-            <span class="s1__welcome-to-a-new">to a new</span>
+          <h1 class="s1__title">
+            <span class="s1__welcome">Welcome</span>
+            <span class="s1__to-a-new">to a new</span>
             <img src="img/bbc-world-service.svg" alt="BBC World Service" width="232" height="175" />
           </h1>
 
@@ -58,37 +58,25 @@
       <!-- Stage 2 -->
       <div class="stage s2">
         <div class="stage__content">
-          <h2>We recently relaunched 28 unique news sites</h2>
+          <h2 class="s2__title">
+            <span class="s2__we-recently-relaunched">We recently relaunched</span>
+            <span class="s2__unique-news-sites">
+              <span class="s2__count">28</span>
+              <span class="s2__unique">unique</span>
+              news sites
+            </span>
+          </h2>
 
           <ul class="s2__sites">
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
-            <li><img src="http://placehold.it/320x480" alt="BBC Mundo" /></li>
+            <li class="s2__site s2__site--russian">
+              <img src="img/s2-site-russian.jpg" alt="BBC Russian" width="" />
+            </li>
+            <li class="s2__site s2__site--mundo">
+              <img src="img/s2-site-mundo.jpg" alt="BBC Mundo" width="" />
+            </li>
+            <li class="s2__site s2__site--arabic">
+              <img src="img/s2-site-arabic.jpg" alt="BBC Arabic" width="" />
+            </li>
           </ul>
         </div>
       </div>
@@ -96,11 +84,15 @@
       <!-- Stage 3 -->
       <div class="stage s3">
         <div class="stage__content">
-          <h2>That reach over 70,000,000 people worldwide, every month</h2>
+          <h2 class="s3__title">
+            That reach over
+            <span class="s3__count">70,000,000</span>
+            people worldwide, every month
+          </h2>
 
           <div class="s3__graph">
             <canvas>Canvas.</canvas>
-            <p>An increase of 36% compared to 2013.</p>
+            <p>An increase of <span class="s3__count">36%</span> compared to 2013.</p>
           </div>
         </div>
       </div>
@@ -108,46 +100,64 @@
       <!-- Stage 4 -->
       <div class="stage s4">
         <div class="stage__content">
-          <img src="http://placehold.it/1280x720" alt="" class="s4__map" />
+          <img src="img/s4-world-map.svg" alt="" class="s4__map" width="1280" height="720" />
 
-          <h2>In 27 different languages</h2>
+          <div class="s4__title-group">
+            <h2 class="s4__title">
+              <span class="s4__in-27">In 27</span>
+              different languages
+            </h2>
 
-          <ul class="s4__languages">
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-            <li><img src="http://placehold.it/90x30" alt="Language" /></li>
-          </ul>
-
-          <div class="s4__fact">
-            <p><strong>BBC Russian</strong> grew by <span>58%</span></p>
+            <ul class="s4__languages">
+              <li><img src="img/service/afrique.svg" alt="" height="20" /></li>
+              <li><img src="img/service/arabic.svg" alt="" height="20" /></li>
+              <li><img src="img/service/azeri.svg" alt="" height="20" /></li>
+              <li><img src="img/service/bengali.svg" alt="" height="20" /></li>
+              <li><img src="img/service/brazil.svg" alt="" height="20" /></li>
+              <li><img src="img/service/burmese.svg" alt="" height="20" /></li>
+              <li><img src="img/service/chinese.svg" alt="" height="20" /></li>
+              <li><img src="img/service/farsi.svg" alt="" height="20" /></li>
+              <li><img src="img/service/gahuza.svg" alt="" height="20" /></li>
+              <li><img src="img/service/hauza.svg" alt="" height="20" /></li>
+              <li><img src="img/service/hindi.svg" alt="" height="20" /></li>
+              <li><img src="img/service/indonesian.svg" alt="" height="20" /></li>
+              <li><img src="img/service/kyrgyz.svg" alt="" height="20" /></li>
+              <li><img src="img/service/mundo.svg" alt="" height="20" /></li>
+              <li><img src="img/service/nepali.svg" alt="" height="20" /></li>
+              <li><img src="img/service/pashto.svg" alt="" height="20" /></li>
+              <li><img src="img/service/russian.svg" alt="" height="20" /></li>
+              <li><img src="img/service/sinhala.svg" alt="" height="20" /></li>
+              <li><img src="img/service/somali.svg" alt="" height="20" /></li>
+              <li><img src="img/service/swahili.svg" alt="" height="20" /></li>
+              <li><img src="img/service/tajik.svg" alt="" height="20" /></li>
+              <li><img src="img/service/tamil.svg" alt="" height="20" /></li>
+              <li><img src="img/service/turkish.svg" alt="" height="20" /></li>
+              <li><img src="img/service/udu.svg" alt="" height="20" /></li>
+              <li><img src="img/service/ukchina.svg" alt="" height="20" /></li>
+              <li><img src="img/service/ukrainian.svg" alt="" height="20" /></li>
+              <li><img src="img/service/uzbek.svg" alt="" height="20" /></li>
+              <li><img src="img/service/vietnamese.svg" alt="" height="20" /></li>
+            </ul>
           </div>
 
-          <div class="s4__fact">
-            <p><strong>BBC Sinhala</strong> grew by <span>203%</span></p>
+          <div class="s4__fact s4__fact--russian">
+            <p>
+              <span class="s3__fact-name">
+                <strong>BBC Russian</strong> grew by
+              </span>
+              <span class="s4__fact-value">58%</span>
+            </p>
+            <img src="img/s4-fact-pin.svg" alt="" class="s4__fact-pin" width="" height="" />
+          </div>
+
+          <div class="s4__fact s4__fact--sinhala">
+            <p>
+              <span class="s4__fact-name">
+                <strong>BBC Sinhala</strong> grew by
+              </span>
+              <span class="s4__fact-value">203%</span>
+            </p>
+            <img src="img/s4-fact-pin.svg" alt="" class="s4__fact-pin" width="90" height="76" />
           </div>
         </div>
       </div>
@@ -155,19 +165,22 @@
       <!-- Stage 5 -->
       <div class="stage s5">
         <div class="stage__content">
-          <h2>On any device</h2>
 
-          <ul class="s5__devices">
-            <li><img src="http://placehold.it/320" alt="" /></li>
-            <li><img src="http://placehold.it/320" alt="" /></li>
-            <li><img src="http://placehold.it/320" alt="" /></li>
-            <li><img src="http://placehold.it/320" alt="" /></li>
-          </ul>
+          <div class="s5__title-group">
+            <h2 class="s5__title">On any device</h2>
 
-          <ul class="s5_facts">
-            <li>17 Million visitors via desktop computers</li>
-            <li>6 Million visitors via tablet devices</li>
-            <li>19 Million visitors via mobile phones</li>
+            <ul class="s5__devices">
+              <li><img src="http://placehold.it/320" alt="" /></li>
+              <li><img src="http://placehold.it/320" alt="" /></li>
+              <li><img src="http://placehold.it/320" alt="" /></li>
+              <li><img src="http://placehold.it/320" alt="" /></li>
+            </ul>
+          </div>
+
+          <ul class="s5__facts">
+            <li><strong>17 Million</strong> visitors via desktop computers</li>
+            <li><strong>6 Million</strong> visitors via tablet devices</li>
+            <li><strong>19 Million</strong> visitors via mobile phones</li>
           </ul>
         </div>
       </div>
@@ -175,7 +188,7 @@
       <!-- Stage 6 -->
       <div class="stage s6">
         <div class="stage__content">
-          <h2>Explore BBC World Service</h2>
+          <h2 class="s6__title">Explore BBC World Service</h2>
 
           <ul class="s6__services">
             <li><a class="s6__service" href="#">BBC Service</a></li>
