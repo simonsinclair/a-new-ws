@@ -169,9 +169,35 @@
 .s5 {
   background-color: #F0F0F0;
 }
-  .s5__devices {
+  .s5__title-group {
+    position: absolute;
+      top: 0; left: 0;
+    z-index: 0;
+  }
+    .s5__title {
+      text-transform: uppercase;
+    }
+    .s5__devices {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+
+      }
+      img {
+        display: block;
+      }
+    }
+  .s5__facts {
     list-style: none;
     padding-left: 0;
+    position: absolute;
+      top: 0; right: 0;
+    z-index: 0;
+
+    strong {
+      display: block;
+    }
   }
 
 // Stage 6
@@ -183,10 +209,24 @@
   text-align: center;
   z-index: -10;
 }
+  .s6__title {}
   .s6__services {
     @extend %nav;
 
     li {
+      border-right: 1px solid #A10000;
+      border-bottom: 1px solid #A10000;
       width: 12.5%;
+
+      &:nth-child(8n+1) {
+        border-left: 1px solid #A10000;
+      }
+      &:nth-child(-n+8) {
+        border-top: 1px solid #A10000;
+      }
     }
   }
+    .s6__service {
+      display: block;
+      height: 112px;
+    }
