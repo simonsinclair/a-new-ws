@@ -53,27 +53,60 @@
   text-align: center;
 }
   .s2__title {
-    color: #FFF;
+    color: #F5F5F5;
+    position: absolute;
+      top: 0; left: (1280px/2)-(516/2);
+    z-index: 20;
   }
-  .s2__we-recently-relaunched {
-    font-weight: 300;
-  }
-  .s2__unique-news-sites {
-    display: block;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
-    .s2__count {
-      color: #312F2D;
-      font-weight: 800;
+    .s2__we-recently-relaunched {
+      font-weight: 300;
     }
-    .s2__unique {
-      font-weight: 800;
+    .s2__unique-news-sites {
+      display: block;
+      font-weight: 300;
+      text-transform: uppercase;
     }
+      .s2__count {
+        color: #312F2D;
+        font-weight: 800;
+      }
+      .s2__unique {
+        font-weight: 800;
+      }
 
   .s2__sites {
-    @extend %nav;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    position: relative;
+    height: 720px;
+    width: 1280px;
   }
+    .s2__site {
+      position: absolute;
+        top: 230px;
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+    .s2__site--russian {
+      top: 280px; left: 140px;
+      width: 360px;
+      z-index: 8;
+    }
+    .s2__site--mundo {
+      left: (1280px/2)-(420/2);
+      width: 420px;
+      z-index: 10;
+    }
+    .s2__site--arabic {
+      top: 280px; right: 140px;
+      width: 360px;
+      z-index: 9;
+    }
 
 // Stage 3
 .s3 {
@@ -114,36 +147,57 @@
   .s4__title-group {
     position: absolute;
       top: 100px; left: 0;
-    width: 720px;
+    width: 568px;
     z-index: 10;
   }
-    .s4__title {}
+    .s4__title {
+      color: #FFF;
+      font-weight: 300;
+    }
+      .s4__in-27 {
+        @extend h1;
+        display: block;
+        font-weight: 800;
+      }
     .s4__languages {
       @extend %nav;
+
+      li {
+        padding: $base-line-height / 6 $base-line-height / 4;
+      }
+      img {
+        display: block;
+      }
     }
 
   .s4__fact {
-    background-color: #180A00;
     color: #FFF;
-    padding: $base-line-height;
     position: absolute;
     width: 256px;
     z-index: 10;
 
     p {
       @extend %clearfix;
+      background-color: #180A00;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: $base-line-height;
     }
-      .s4__fact-name {
-        float: left;
-      }
-      .s4__fact-value {
-        float: right;
-      }
   }
+    .s4__fact-name {
+      float: left;
+    }
+    .s4__fact-value {
+      float: right;
+    }
+    .s4__fact-pin {
+      margin-top: -1px; // Clean up AA-edge
+      display: block;
+    }
 
   // Russian Fact
   .s4__fact--russian {
-    top: 256px; right: 0;
+    top: 16px; right: 242px;
 
     .s4__fact-name {
       width: 120px;
@@ -155,7 +209,7 @@
 
   // Sinhala Fact
   .s4__fact--sinhala {
-    top: 0; right: 0;
+    top: 222px  ; right: 0;
 
     .s4__fact-name {
       width: 120px;
@@ -168,6 +222,7 @@
 // Stage 5
 .s5 {
   background-color: #F0F0F0;
+  color: #626969;
 }
   .s5__title-group {
     position: absolute;
