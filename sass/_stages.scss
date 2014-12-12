@@ -316,8 +316,16 @@
     }
   }
     .s6__service {
+      background-color: #CC0101;
       display: block;
       height: 112px;
+      overflow: hidden;
+      transition: background-color 150ms ease-out;
+
+      &:hover {
+        background-color: #A10000;
+        transition: background-color 150ms ease-in;
+      }
 
       img {
         display: block;
@@ -326,4 +334,10 @@
       .s6__blocks,
       .s6__name {
         margin: 0 auto;
+      }
+      .s6__blocks {
+        margin-top: 38px;
+      }
+      .s6__name {
+        margin-top: $base-line-height / 6;
       }
