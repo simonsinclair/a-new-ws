@@ -246,26 +246,34 @@
       margin-bottom: 0;
       padding-left: 0;
       position: relative;
+      width: 100%;
 
       li {
         position: absolute;
       }
-      img {
-        display: block;
-      }
     }
-      .s5__device {}
+      .s5__device {
+
+        img {
+          display: block;
+          max-width: 100%;
+        }
+      }
       .s5__device--desktop {
         top: 0; left: 0;
+        z-index: 10;
       }
       .s5__device--tablet {
-        top: 0; left: 0;
+        top: 0; left: 210px;
+        z-index: 20;
       }
       .s5__device--smart {
-        top: 0; left: 0;
+        top: 0; left: 420px;
+        z-index: 30;
       }
       .s5__device--feature {
-        top: 0; left: 0;
+        top: 0; left: 530px;
+        z-index: 40;
       }
 
   .s5__facts {
