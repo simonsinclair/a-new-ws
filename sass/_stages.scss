@@ -235,6 +235,7 @@
   .s5__title-group {
     position: absolute;
       top: 0; left: 0;
+    width: 720px;
     z-index: 0;
   }
     .s5__title {
@@ -246,7 +247,6 @@
       margin-bottom: 0;
       padding-left: 0;
       position: relative;
-      width: 100%;
 
       li {
         position: absolute;
