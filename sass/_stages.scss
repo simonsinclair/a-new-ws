@@ -113,6 +113,10 @@
   background-color: #3C4141;
   text-align: center;
 }
+  .stage__content--s3 {
+    background-image: url('../img/s3-bg.gif');
+    background-repeat: repeat-x;
+  }
   .s3__title {
     color: #FFF;
     font-weight: 300;
@@ -223,6 +227,10 @@
 .s5 {
   background-color: #F0F0F0;
   color: #626969;
+
+  .stage__content {
+    overflow: visible;
+  }
 }
   .s5__title-group {
     position: absolute;
@@ -234,15 +242,32 @@
     }
     .s5__devices {
       list-style: none;
+      margin-top: 0;
+      margin-bottom: 0;
       padding-left: 0;
+      position: relative;
 
       li {
-
+        position: absolute;
       }
       img {
         display: block;
       }
     }
+      .s5__device {}
+      .s5__device--desktop {
+        top: 0; left: 0;
+      }
+      .s5__device--tablet {
+        top: 0; left: 0;
+      }
+      .s5__device--smart {
+        top: 0; left: 0;
+      }
+      .s5__device--feature {
+        top: 0; left: 0;
+      }
+
   .s5__facts {
     list-style: none;
     padding-left: 0;
@@ -251,8 +276,13 @@
     z-index: 0;
 
     strong {
+      @extend h3;
       display: block;
     }
+  }
+  .s5__pointer {
+    position: absolute;
+    bottom: -24px; left: (1280px/2)-(48/2);
   }
 
 // Stage 6
@@ -263,6 +293,10 @@
     right: 0; bottom: 0; left: 0;
   text-align: center;
   z-index: -10;
+
+  .stage__content {
+    height: 800px;
+  }
 }
   .s6__title {}
   .s6__services {
@@ -284,4 +318,12 @@
     .s6__service {
       display: block;
       height: 112px;
+
+      img {
+        display: block;
+      }
     }
+      .s6__blocks,
+      .s6__name {
+        margin: 0 auto;
+      }
