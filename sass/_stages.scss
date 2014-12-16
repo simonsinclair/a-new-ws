@@ -121,12 +121,14 @@
   .s3__title {
     color: #FFF;
     font-weight: 300;
+    margin-top: $base-line-height * 4;
   }
     .s3__count {
       @extend h1;
 
       display: block;
       font-weight: 800;
+      margin-top: $base-line-height;
     }
   .s3__graph {
     position: relative;
@@ -147,6 +149,8 @@
     .s3__count {
       @extend h2;
       display: block;
+      margin-top: $base-line-height / 2;
+      margin-bottom: $base-line-height / 2;
     }
   }
 
@@ -305,6 +309,7 @@
     strong {
       @extend h3;
       display: block;
+      margin-bottom: 0;
     }
   }
   .s5__pointer {
@@ -350,7 +355,6 @@
         background-color: #A10000;
         transition: background-color 150ms ease-in;
       }
-
       img {
         display: block;
       }

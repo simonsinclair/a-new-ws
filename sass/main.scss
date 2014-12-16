@@ -94,9 +94,8 @@ a {
   margin-top: 0;
   padding: $base-line-height / 3;
   position: absolute;
-    top: 0; left: 0;
+    top: 0; right: 0; left: 0;
   text-align: center;
-  width: 320px;
   z-index: 100;
 
   @media (max-width: 1279px) {
