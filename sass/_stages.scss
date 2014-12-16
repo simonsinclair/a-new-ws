@@ -18,7 +18,7 @@
   }
   .s1__title {
     position: absolute;
-      top: 78px; left: (1280px/2)-(383/2);
+      top: 78px; left: (1280px/2)-(397/2);
     z-index: 20;
 
     .s1__welcome,
@@ -40,9 +40,10 @@
     }
   }
   .s1__scroll-cta {
-    display: none; // TEMP
+    font-size: 15px;
+    font-weight: 700;
     position: absolute;
-      bottom: 0; left: (1280px/2)-(69/2);
+      bottom: $base-line-height; left: (1280px/2)-(73/2);
     text-transform: uppercase;
     z-index: 20;
   }
@@ -130,16 +131,14 @@
   .s3__graph {
     position: relative;
     margin-top: $base-line-height * 3;
-    
+
     img {
       display: block;
       margin-left: 94px;
     }
     p {
       background-color: #232626;
-      // color: #17B2B2;
-      color: #FFF;
-      opacity: 0.9;
+      color: #17B2B2;
       padding: $base-line-height / 2;
       position: absolute;
         top: 0px; left: (1280px/2) - (191/2);
@@ -323,6 +322,7 @@
   z-index: -10;
 }
   .s6__title {}
+  .s6__instruction {}
   .s6__services {
     @extend %nav;
 
